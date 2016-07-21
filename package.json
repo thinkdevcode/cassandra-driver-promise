@@ -1,0 +1,22 @@
+{
+  "name": "cassandra-driver-promise",
+  "version": "1.0.0",
+  "description": "Takes cassandra client and makes promises for functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkdevcode/cassandra-driver-promise.git"
+  },
+  "author": "Eugene Alfonso <thinkdevcode@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thinkdevcode/cassandra-driver-promise/issues"
+  },
+  "homepage": "https://github.com/thinkdevcode/cassandra-driver-promise#readme",
+  "dependencies": {
+    "cassandra-driver": "^3.1.1"
+  }
+}

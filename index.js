@@ -1,0 +1,20 @@
+'use strict'
+
+const cdriver = require('cassandra-driver')
+
+class Cassandra {
+    constructor(clientOptions) {
+        this.client = new cdriver.Client(clientOptions)        
+    }
+
+    execute(query, params, queryOptions) {
+        return new Promise((resolve, reject) => {
+            this.client.query(query, params, queryOptions, (err, results) => {
+                if (err) return reject(err)
+                if (results) return resolve(results)
+            })
+        })
+    }
+}
+
+module.export = Cassandra
