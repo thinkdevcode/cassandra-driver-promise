@@ -8,7 +8,7 @@ class Cassandra {
     }
 
     execute(query, params, queryOptions) {
-        return new Promise((resolve, reject) => {
+        return new Promise(function (resolve, reject) {
             this.client.query(query, params, queryOptions, (err, results) => {
                 if (err) return reject(err)
                 if (results) return resolve(results)
