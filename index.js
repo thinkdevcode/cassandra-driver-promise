@@ -17,4 +17,4 @@ class Cassandra {
     }
 }
 
-module.export = Cassandra
+module.exports = Cassandra
